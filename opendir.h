@@ -1,7 +1,9 @@
 #ifndef  _OPEN_DIR_H
 #define  _OPEN_DIR_H
+
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/ioctl.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <assert.h>
@@ -53,5 +55,7 @@ void show_file_detail () ;
 int get_console_col () ;
 
 _Bool is_dir (const char * p  ) ; 
+
+void show_info () ;
 
 #endif 
